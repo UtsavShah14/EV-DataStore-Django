@@ -1,0 +1,26 @@
+<!DOCTYPE html5>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to EV_DataStore</title>
+  </head>
+  <body>
+
+    {% if user %}
+    <div class="">
+      <a href="/update_EV">EV DataStore</a>
+    </div>
+    <p> Welcome to my test Application {{ user }}</p>
+    {% else %}
+    <p>Hello Guest, wecome to my application</p>
+    {% endif %} 
+
+    <p>You can {{ url_string }} <a href=" {{ url }} ">here</a></p>
+
+    <div class="">
+      <button type="submit" name="search"><a href="/search_Form">Search</a></button>
+      To search for a vehicle, click here</p>
+    </div>
+
+  </body>
+</html>
